@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelg.css">
+    <link rel="stylesheet" href="carrosel.css">
+    <link rel="stylesheet" href="menulg.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SASVI</title>
+
+</head>
+<body id="body">
+    <div class="header" id="header">
+       
+        <div class="navigation_header" id="navigation_header">
+            <img src="IMG/logo.png" alt="Logo GN" class="img_logo_header">
+
+            <a href="../SASVII ATUALIZADO/indexlg.html" class="inicio">INICIO</a>
+            <a href="../SASVII ATUALIZADO/mapalg.html" class="mapa">MAPA</a>
+            <a href="../SASVII ATUALIZADO/agendalg.html" class="agendamento">AGENDAMENTO</a>
+        </div>
+       <div class="navigation_2 ">
+
+    <div class="container">
+        <button class="popup-button" type="submit" onclick="handlePopup(true)" class="cadastro">MINHA CONTA 
+            </button>
+        </div>
+        <div class="popup" id="popup">
+            <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                X
+            </button>
+            <img class="imgusu2" src="IMG/usuario.png">
+            <p class="title">USUÁRIO12</p>
+
+            <p class="desc">usuario12@gmail.com</p>
+
+            <a href=""><button class="open-popup-button" type="submit" >
+                EDITAR PERFIL
+            </button></a>
+
+            <a href=""><button class="open-popup-button2" type="submit" >
+                HISTÓRICO
+            </button></a>
+
+            <a href="../SASVII ATUALIZADO/index.html"><button class="open-popup-button3" type="submit" >
+                SAIR DA CONTA
+            </button></a>
+
+
+            
+        </div>
+
+    </div>
+    <script> 
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+    </div>
+
+        <section class="divide">
+
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1">
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                    <input type="radio" name="slide" id="slide6">
+					
+
+                    <div class="slide first">
+                        <img src="IMG/SANGUE ATUALIZADO 2.png" alt="Slide do site.">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/SANGUE ATUALIZADO.png" alt="Slide do site.">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="IMG/1.png" alt="Slide do site.">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/BANNER NOVO.png" alt="Slide do site.">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/SASVI BANNER.png" alt="Slide do site.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="carrosel.js"></script>
+<script>
+    let slide = 1;
+document.querySelector("#slide1").checked = true;
+
+setInterval( function () {
+    nextImageSlide();
+},6000)
+
+function nextImageSlide() {
+    slide++;
+    if (slide > 5) {
+        slide = 1;
+    }
+
+    document.querySelector("#slide"+slide).checked = true;
+}
+</script>
+
+
+
+    <div tabindex="0" class="content" onfocus="closeSidebar()">
+       <img src="IMG/waves1.png" class="wave">
+       <img src="IMG/waves2.png" class="wave">
+
+        <div class="caixa-texto">
+         
+                        <h1 class="fonte_como_doar">COMO FAÇO PARA DOAR?</h1>
+            <p class="txt">É NECESSÁRIO ENTENDER TODOS <span class="vermelho">REQUISITOS</span> PARA<br>
+            QUE A DOAÇÃO SEJA REALIZADA <span class="vermelho"> CORRETAMENTE. </span> </p>
+        </div>
+
+        <div class="caixa-botao">
+            <a href="#docs">  <button class="fonte_como_doar" ><span class="branco">SABER MAIS! </span></button></a>
+        </br>
+        </div>
+        </div>
+     <div class="bloco2">
+        <div class="video-container">
+            <iframe width="600" height="380"  src="https://www.youtube.com/embed/_NlNFbhg6Ys" frameborder="0" allowfullscreen></iframe>
+          </div>
+        <div class="bloco3 bloco_mobile">
+            <p class="doc"> REQUISITOS BÁSICOS</p>
+            <p> <ul class="bloco3_1">
+                <li><p>Ter entre 18 e 65 anos de idade. </p></li>
+                <li><p>Não ser portador de epilepsia ou de diabetes em uso de insulina.</p> </li>
+                <li><p>Não ter tido gripe ou febre nos últimos 15 dias.</p> </li>
+                <li><p>Não estar grávida ou amamentando.</p> </li>
+                <li><p>Não ter colocado piercing ou tatuagem há menos de um ano.</p> </li>
+                <li><p>Pesar no minimo 50 kg.</p></li>
+                <li><p>Não ter ingerido bebida alcolica nas últimas 12 horas.</p></l>
+                <li><p>Estar descansado(ter dormido pelo menos 6 horas nas últimas 24 horas).</p></li>
+                <li><p>Estar alimentado (evitar alimentação gordurosa nas 4 horas que antecedem a doação).</p></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="bloco2 ">
+            <div class="bloco3">
+                <p class="doc" id="docs"> DOCUMENTOS NECESÁRIOS</p>
+                <div class="doc_2">
+                    <p>  Não esquecer de apresentar no dia da doação documento de identificação 
+                        com foto emitido por órgão oficial (carteira de identidade, carteira nacional de habilitação, 
+                        carteira de trabalho, passaporte, registro nacional de estrangeiro, certificado de reservista
+                        e carteira profissional emitida por classe), serão aceitos documentos digitais com foto.</p>
+                    
+                    </div>
+                
+            </div>
+            <div class="caixa_verm_2">
+            <div class="caixa_verme"> 
+                <h2 class="doc_1">FIQUE ATENT0!</h2>
+                <ul>
+                <li><P>LEVE UM DOCUMENTO COM FOTO. </P></li>
+                <li><p>NÃO COMPAREÇA EM JEJUM.</p> </li>
+                <li><P>SE A DOAÇÃO FOR FEITA ÁPOS O ALMOÇO DEVE SER DADO UM INTERVALO DE TRÊS HORAS.</P> </li>
+                <li><p>O PRAZO ENTRE DOAÇÕES DEVE SER DE 60 DIAS PARA HOMENS E 90 DIAS PARA MULHERES.</p></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bloco4">
+        <main class="cards">
+            <section class="card" >
+                <img src="IMG/gota.png" class="photo">
+                <h3>ㅤㅤO QUE É DOAR SANGUE?ㅤㅤ</h3>
+                <div class="doc_5">
+                <P >⠀⠀Doar sangue é ação realizada por uma pessoas saudável para cidadãos que possuem cadastro em instituições terapêuticas públicas ou privadas.ㅤㅤㅤㅤㅤㅤ</P>⠀
+                </div>
+            </section>
+
+            <section class="card">
+                <img src="IMG/gota.png" class="photo">
+                <h3>ㅤㅤQUANTO TEMPO LEVA?ㅤㅤ</h3>
+                <div class="doc_5">
+                        <p class="doc_2">⠀⠀O procedimento(cadastro, aferição de sinais vitais, teste de anemia, coleta do sangue e lanche) levam cerca de 
+                     minutos, porém, a coleta dura entre 8 a 12 minutos.</p><br>
+                </div>
+            </section>
+
+            
+        
+        </main>
+    </div>
+    
+ </div>
+ 
+    
+     <footer>
+        <div class="footer_content">
+        <div class="box_contato">
+            <h2 id="font_footer">ENTRE EM CONTATO:</h2>
+            <ul class="font_link">
+                <li><a href="#"><b>Telefone: </b> 12 99744-7598</a></li>
+                <li><a href="#"><b>Email: </b>tccsasvi@gmail.com</a></li>
+         <li><p><b>Horário de atendimento :</b> segunda a sexta<BR> das 8:00 ás 17:00hrs</p></a></li>
+
+    <div class="social_media">
+         <a href="#" class="footer_link" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#" class="footer_link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+             </a>
+             <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                 </a>
+</div>
+            </ul>
+        </div>
+        <div class="box_ref">
+        <h2 id="font_footer">REFERÊNCIAS:</h2>
+        <ul class="font_link">
+            <li><a href="#">Hemominas</a></li>
+            <li><a href="#">Prosangue</a></li>
+            
+    
+        </ul>
+    </div>
+        <div class="box_sobre">
+            <h2 id="font_footer2">SOBRE NÓS:</h2>
+            <P class="font_link">Nós somos alunos três alunos da instituição Centro de Educação Profissional Tancredo Neves e cursamos informática. 
+            A fim de agilizar o processo de agendamento 
+            desenvolvemos esse sistema para concluirmos o curso.</P>
+        </div>
+   
+     </footer>
+     <div id="footer_copyright">
+        &#169
+        <p>2023 all rights reservet</p>
+    </div>       
+</body>
+</html>

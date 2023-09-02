@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="teste2.css">
+    <link rel="stylesheet" href="styleag.css">
+
+
+    <link rel="stylesheet" href="carrosel.css"> 
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="script2.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel=" shortcut icon" href="IMG/gota(1).png">
+    <title>AGENDAMENTO</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="IMG/logo.png" alt="Logo GN" class="img_logo_header">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../SASVI/index.html" class="nav-link">INICIO</a></li>
+                    <li class="nav-item"><a href="../SASVI/mapa.html" class="nav-link">MAPA</a></li>
+                    <li class="nav-item"><a href="../SASVI/agenda.html" class="nav-link">AGENDAMENTO</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="popup-button" type="submit" onclick="handlePopup(true)" class="cadastro">ENTRE OU CADASTRE-SE</button>
+                <div class="popup" id="popup">
+
+                    <p class="title">JÁ POSSUI CADASTRO?</p>
+        
+                    <p class="desc">acesse sua conta</p>
+        
+                    <a href="../SASVI/LOGIN/login.html"><button class="open-popup-button" type="submit" >
+                        𝗘𝗡𝗧𝗥𝗔𝗥
+                    </button></a>
+        
+                    <p class="desc2">é novo aqui?</p>
+        
+                   <a href="../SASVI/LOGIN/cadastro.html" class="desc3p" ><p class="desc3" >𝗰𝗮𝗱𝗮𝘀𝘁𝗿𝗮𝗿</p></a>
+        
+                    <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                        Fechar
+                    </button>
+                </div>
+           
+            </div>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="foto1.svg" alt=""></button>  
+            </div>
+        </nav>
+    </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../SASVI/index.html" class="nav-link">INICIO</a></li>
+            <li class="nav-item"><a href="../SASVI/mapa.html" class="nav-link">MAPA</a></li>
+                <li class="nav-item"><a href="../SASVI/agenda.html" class="nav-link">AGENDAMENTO</a></li>
+            </ul>
+
+            <div class="login-button2">
+                <a href="../SASVI/LOGIN/login.html"><button>ENTRAR EM UMA CONTA</button> </a>
+                <a href="../SASVI/LOGIN/cadastro.html">  <button>CADASTRAR-SE</button> </a>
+                
+                
+            </div>
+            
+
+    </div>
+        </div>
+    </header>
+    <script src="script2.js"></script>
+    <script> 
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+   
+   
+
+    </div>
+   
+<div class="agende">
+        <div class="container">
+            <div class="agndimg">
+                <img src="IMG/agd.png" alt="" id="img2">
+            </div>
+            
+            <div class="box" id="cair">
+                
+
+                <div class="input-box">
+                    <label for="lastname">Data de Agendamento</label>
+                    <input id="lastname" type="date" name="" placeholder="" required>
+                </div>
+
+                
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Horários</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <select class="tipos">
+                                <option  value="bota">10:00</option>
+                                <option  value="fla"> 10:10</option>
+                                <option  value="flu"> 10:20</option>
+                                <option  value="vasco"> 10:30</option>
+                                <option  value="vasco">10:40</option>
+                                <option  value="vasco"> 10:50</option>
+                                <option  value="vasco"> 11:00</option>
+                                <option  value="vasco"> 11:10</option>
+                                
+                                </select>
+                             
+                    </div>
+                        
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Hemocentro</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <select class="tipos">
+                                <option  value="bota">Hemocentro MG</option>
+                                <option  value="fla"> Hemocentro SC</option>
+                                <option  value="flu">  Hemocentro SP</option>
+                                <option  value="vasco">  Hemocentro MT</option>
+                                <option  value="vasco"> Hemocentro ES</option>
+                                <option  value="vasco">  Hemocentro RO</option>
+                                <option  value="vasco">  Hemocentro AP</option>
+                                <option  value="vasco">  Hemocentro SC</option>
+                                
+                                </select>
+                             
+                    </div>
+                        
+                </div>
+            </div>
+           <!-- <div class="form">
+                <form action="#">
+                 <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Nome</label>
+                            <input id="firstname" type="text" name="" placeholder="Digite seu nome" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input id="lastname" type="text" name="" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="" placeholder="Digite seu e-mail" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="number">Celular</label>
+                            <input id="number" type="tel" name="" placeholder="(xx) xxxx-xxxx" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="password">CPF</label>
+                            <input id="password" type="text" name="" placeholder="Digite seu CPF" required>
+                        </div>
+    
+    
+                        <div class="input-box">
+                            <label for="confirmPassword">SUS</label>
+                            <input id="confirmPassword" type="text" name="" placeholder="Digite seu cartão SUS" required>
+                        </div>
+                    
+                    </div>-->
+    
+               
+                    <div class="continue-button">
+                        <button><a href="#">AGENDAR</a> </button>
+                </div>
+                    
+                </form>
+            </div>
+        </div>
+   
+</div>
+<footer>
+    <div class="footer_content">
+    <div class="box_contato">
+        <h2 id="font_footer">ENTRE EM CONTATO:</h2>
+        <ul class="font_link">
+            <li><a href="#"><b>Telefone: </b> 12 99744-7598</a></li>
+            <li><a href="#"><b>Email: </b>tccsasvi@gmail.com</a></li>
+     <li><p><b>Horário de atendimento :</b> segunda a sexta<BR> das 8:00 ás 17:00hrs</p></a></li>
+
+<div class="social_media">
+     <a href="#" class="footer_link" id="instagram">
+    <i class="fa-brands fa-instagram"></i>
+     </a>
+     <a href="#" class="footer_link" id="facebook">
+        <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="#" class="footer_link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+             </a>
+</div>
+        </ul>
+    </div>
+    <div class="box_ref">
+    <h2 id="font_footer">REFERENCIAS:</h2>
+    <ul class="font_link">
+        <li><a href="#">Hemominas</a></li>
+        <li><a href="#">Prosangue</a></li>
+        
+
+    </ul>
+</div>
+    <div class="box_sobre">
+        <h2 id="font_footer">SOBRE NOS:</h2>
+        <P class="font_link">Nos somos alunos três alunos da instituição Centro de Educação Profissional Tancredo Neves e cursamos informatica. 
+        A fim de agilizar o processo de agendamento 
+        desenvolvemos esse sistema para concluirmos o curso.</P>
+    </div>
+
+ </footer>
+ <div id="footer_copyright">
+    &#169
+    <p>2023 all rights reservet</p>
+</div>       
+</body>
+</html>

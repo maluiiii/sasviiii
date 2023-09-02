@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@300&display=swap');
+
+
+.content{
+padding-top: 50px;
+padding-bottom: 40px;
+    display: flex;
+    align-items:center;
+    transition: 1s;
+    background-color: #ececec;
+    font-weight: bold;
+    position: relative;
+  
+}
+
+.bloco7{
+    display: flex;
+    padding: 2rem 2rem;
+    transition: 1s;
+    background-color: #d1d6d6;
+      
+}
+.fonte_como_doar{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    
+}
+
+.caixa-texto {
+    font-size: 25px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.caixa-botao {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.vermelho{
+    color:  red;
+}
+.txt{
+    font-size: 20px;
+}
+.caixa-botao button{
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    background: #b60000;
+    font-size: 20px;
+
+}
+button:hover{
+    
+    transition: all;
+    transition: 10s;
+    cursor: pointer;
+    max-width: 100%;
+}
+.branco{
+    color: seashell;
+}
+.bloco2{
+   
+    display: flex;
+    padding: 2rem 2rem;
+    transition: 1s;
+    background-color: #ececec;
+    
+
+
+}
+.bloquinho{
+    display: flex;
+    gap: 50px;
+}
+.video-container {
+    border: 4px;
+    position: relative;
+    width: 700px;
+  height: 400;
+   padding-left:30px;
+  
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+border: 4px solid #b60000;;
+
+  }
+  .bloco3_1{
+    margin-left: 90px;
+  }
+.bloco3{
+    
+    margin-top: 0%;
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+
+    
+}
+.bloco3_1 li p{
+    color: #000000;
+}
+.doc{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 1rem 4rem;
+
+
+}
+
+
+.doc_1{
+    border-bottom: 2px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-top: 2px;
+    text-align: center;
+}
+.doc_1 ul p{
+    padding-left: 2rem;
+    
+    
+}
+.caixa_verme ul li{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.bloco3_1 p{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+   font-size: 21px;
+    color: #000000; 
+}
+.bloco3_1 p ul li{
+color:#b60000;
+}
+.bloco4{
+    display: flex;
+    padding: right 0;
+    width: 100%;
+  
+}
+.caixa_verme{
+    margin: 50px;
+    margin-top: 18%;
+    border-radius: 20px;
+    background: #b60000;
+    padding: 1rem 1.5rem ;
+    margin-top: 30px;
+    
+}
+.caixa_verme_2{
+    padding-bottom:3000px;
+}
+
+.caixa_verme li p {
+color: white;
+align-items: center;
+
+}
+.doc_2 p {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight:700;
+    color: #000000;
+    text-align: justify;
+   
+}
+.doc_2 li {
+    font-family: 'Secular One', sans-serif;
+    font-size: 21px;
+    color: #000000;
+    text-align: justify;
+}
+.bloco4{
+display: flex;
+background-color: #462424;
+justify-content: center;
+align-items: justify;
+background-color: #a8ced4;
+}
+.doc_5{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    text-align: justify;
+    font-size: 16px;
+    font-weight:700;
+}
+main.cards{
+    display:flex;
+    align-items: center;
+    padding: 32px;
+    transition: 1ms;
+  
+}
+ .photo{
+    width: 64px;
+    height: 64px;
+ }
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1.5rem ;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+.main.cards section.card:first-child{
+margin-left: 0;
+}
+
+main.cards section.card .spam{
+font-weight: 300;
+max-width: 240px;
+font-size: 80%;
+margin-bottom: 16px;    
+
+}
+main.cards section.card h3{
+    margin: 16px 0;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    color: #b60000;;
+    }
+
+    main.cards section.card{
+       box-shadow: 20px 20px 50px -30px #8b041b;
+         
+    }
+    .wave{
+        width: 170px;
+        top: 0;
+        position: absolute;
+    }
+    .wave:nth-child(1){
+        left: 0;
+    }
+    .wave:nth-child(2){
+        right: 0;
+        width: 160px;
+    }
+    @media screen and (max-width: 1120px) {
+        .bloco3.bloco_mobile{
+            margin-left: 0;
+        }
+        .bloco3{
+            margin: auto;
+        }
+        .caixa_verme{
+            width: 45%;
+            border-radius: 20px;
+            background: #b60000;
+            padding: 1rem 1.5rem ;
+            margin-left: auto;
+            margin-right: auto; 
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+          
+            
+        }
+      .bloquinho{
+          display: block;
+        
+      }
+    .doc{
+        text-align: center;
+  
+    }
+    .video-container {
+        padding-left:10px;
+        margin-right: auto; 
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: 1000px;
+      height: 400px;
+    
+      
+      }
+.bloco_mobile{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bloco2{
+    display:flex ;
+    flex-direction: column;
+    margin:0;
+    padding-top: 0;
+    padding-bottom: 1px;
+}
+}
+     @media screen and (max-width: 1298px) {
+        .wave:nth-child(1){
+            display:none;
+        }
+        .caixa-texto {
+           padding-left: 40px;
+        }
+    .caixa-texto p{
+        padding-left: 20px;
+    }
+        .caixa-botao {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+     }
+    @media screen and (max-width: 1108px) {
+        .caixa-texto {
+            font-size: 23px;  
+        }
+        
+        .txt{
+            font-size: 18px;
+        }
+        .caixa-botao button{
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            
+        }
+        
+        .doc{
+            font-size: 30px;
+        }
+        .doc_1{
+
+            font-size: 25px;
+        }
+     
+        .caixa_verme ul li{
+           
+            font-size: 13px;
+          
+        }
+       
+        .bloco3_1 p{
+           font-size: 17px;
+            
+        }
+        .bloco3_1 p ul li{
+        color:#b60000;
+        }
+        .doc_2 p {
+           
+            font-size: 17px;
+           
+        }
+        .doc_2 li {
+            
+            font-size: 17px;
+            color: #000000;
+            
+        }
+        .video-container {
+            border: 4px;
+            position: relative;
+            width: 90%;
+     
+          }
+
+    }
+    @media screen and (max-width: 1026px) {
+        .caixa-texto {
+            font-size: 20px;  
+        }
+        
+        .txt{
+            font-size: 16px;
+           text-align: justify;
+        }
+        .caixa-botao button{
+            padding: 0;
+             margin: 0;
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+            
+        }
+       
+        
+    }
+    @media screen and (max-width: 910px) {
+        .caixa-texto {
+            font-size: 18px;  
+            text-align: justify;
+        }
+        
+        .txt{
+            font-size: 16px;
+            text-align: left;
+        }
+        .caixa-botao button{
+            padding: 0;
+             margin: 0;
+            width: 170px;
+            height: 40px;
+            font-size: 13px;
+            
+        }
+        .fonte_como_doar{
+            text-align: left;
+        }
+        .bloco_mobile{
+            text-align: left;
+        }
+        .bloco3_1{
+            margin-left: 45px;
+          }
+        
+    }
+    
+
+     @media screen and (max-width: 780px) {
+        main.cards{
+            display:block;
+        }
+        .card{
+            margin-top: 2rem;
+            
+        }
+        .doc_5{
+            text-align: center;
+        }
+         }
+         @media screen and (max-width: 400px) {
+        .bloco2{
+                display: flex;
+                flex-direction: column;
+               
+            }
+        .bloco_mobile{
+                margin-top: 400px;
+            }
+         .caixa_verme{
+            margin-top: 8%;
+           margin-right: 0.2%;
+            border-radius: 10px;
+            background: #b60000;
+         }
+    }

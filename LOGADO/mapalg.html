@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menulg.css">
+    <link rel="stylesheet" href="stylemp.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>MAPA SASVI</title>
+</head>
+<body>
+    <div class="header" id="header">
+       
+        <div class="navigation_header" id="navigation_header">
+            <img src="IMG/logo.png" alt="Logo GN" class="img_logo_header">
+
+            <a href="../SASVII ATUALIZADO/indexlg.html" class="inicio">INICIO</a>
+            <a href="../SASVII ATUALIZADO/mapalg.html" class="mapa">MAPA</a>
+            <a href="../SASVII ATUALIZADO/agendalg.html" class="agendamento">AGENDAMENTO</a>
+        </div>
+       <div class="navigation_2 ">
+
+        <div class="container">
+            <button class="popup-button" type="submit" onclick="handlePopup(true)" class="cadastro">MINHA CONTA 
+                </button>
+            </div>
+            <div class="popup" id="popup">
+                <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                    X
+                </button>
+                <img class="imgusu2" src="IMG/usuario.png">
+                <p class="title">USUÁRIO12</p>
+    
+                <p class="desc">usuario12@gmail.com</p>
+    
+                <a href=""><button class="open-popup-button" type="submit" >
+                    EDITAR PERFIL
+                </button></a>
+    
+                <a href=""><button class="open-popup-button2" type="submit" >
+                    HISTÓRICO
+                </button></a>
+    
+                <a href="../SASVII ATUALIZADO/index.html"><button class="open-popup-button3" type="submit" >
+                    SAIR DA CONTA
+                </button></a>
+    
+    
+                
+            </div>
+    
+        </div>
+    <script> 
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+    </div>
+
+    <div class="mybox">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1540088.100445859!2d-47.44909857296665!3d-22.656243768437808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shemocentro!5e0!3m2!1spt-BR!2sbr!4v1686851414938!5m2!1spt-BR!2sbr" width="1600" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="footer_content">
+        <div class="box_contato">
+            <h2 id="font_footer">ENTRE EM CONTATO:</h2>
+            <ul class="font_link">
+                <li><a href="#"><b>Telefone: </b> 12 99744-7598</a></li>
+                <li><a href="#"><b>Email: </b>tccsasvi@gmail.com</a></li>
+         <li><p><b>Horário de atendimento :</b> segunda a sexta<BR> das 8:00 ás 17:00hrs</p></a></li>
+
+    <div class="social_media">
+         <a href="#" class="footer_link" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#" class="footer_link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+             </a>
+             <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                 </a>
+</div>
+            </ul>
+        </div>
+        <div class="box_ref">
+        <h2 id="font_footer">REFERENCIAS:</h2>
+        <ul class="font_link">
+            <li><a href="#">Hemominas</a></li>
+            <li><a href="#">Prosangue</a></li>
+            
+    
+        </ul>
+    </div>
+        <div class="box_sobre">
+            <h2 id="font_footer">SOBRE NOS:</h2>
+            <P class="font_link">Nos somos alunos três alunos da instituição Centro de Educação Profissional Tancredo Neves e cursamos informatica. 
+            A fim de agilizar o processo de agendamento 
+            desenvolvemos esse sistema para concluirmos o curso.</P>
+        </div>
+   
+     </footer>
+     <div id="footer_copyright">
+        &#169
+        <p>2023 all rights reservet</p>
+    </div>       
+</body>
+</html>

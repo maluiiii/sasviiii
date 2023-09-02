@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    --color-white: #c6302c;
+    --color-dark1: rgb(39, 39, 39);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #2d2d2d;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #0097b2;
+    --color-purple: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0097b2;
+    color: var(--color-white);
+}
+
+.logo_header {
+    display: flex;
+}
+
+.img_logo_header{
+   width: 70px;
+    
+}
+.img_logo_user{
+width: 50px;
+}
+
+.header{
+    padding: .2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: color #0097b2;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+}
+.navigation_header{
+    display: flex;
+    gap: 1.5rem;
+}
+.content{
+
+    display: flex;
+    align-items:center;
+
+    transition: 1s;
+    background-color: #ececec;
+    font-weight: bold;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+   
+}
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+ 
+.txt{
+    color: #0097b2;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 0ms;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+.fonte_como_doar{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    
+}
+.fonte_cabecalho{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.caixa-texto {
+    font-size: 25px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divide{
+width: 100%;
+background: rgb(247, 247, 247);
+}
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides{
+    width: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+	padding-top: 1%;
+    width: 100vw;
+    height: 26vw;
+}
+
+#slide1:checked ~ .first {
+    margin-left: -5;
+}
+
+#slide2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ .first {
+    margin-left: -300%;
+}
+
+#slide5:checked ~ .first {
+    margin-left: -400%;
+}
+
+#slide6:checked ~ .first {
+    margin-left: -500%;
+}
+.caixa-botao {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.vermelho{
+    color:  red;
+}
+.txt{
+    font-size: 20px;
+}
+button{
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    background: #b60000;
+    font-size: 20px;
+}
+.branco{
+    color: seashell;
+}
+.bloco2{
+    display: flex;
+    padding: 2rem 2rem;
+    transition: 1s;
+    background-color: #ececec;
+}
+.index_foto{
+    width: 500px;
+    height: 350px;
+    padding: right 0;
+    border: 4px solid #b60000;
+}
+.bloco3{
+    padding: 2rem 3rem;
+    font-size: 25px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-top: 0%;
+   
+
+    
+}
+.doc{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+
+}
+.bloco3_1 {
+   font-family: 'Secular One', sans-serif;
+   font-size: 20px;
+    color: #0097b2;
+    
+}

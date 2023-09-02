@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+.footer{
+    width: 100%;
+    color: rgb(246, 246, 246);
+   text-align: justify;
+   text-decoration: none;
+
+}
+#font_footer{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font_link li a{
+    font-size: 15px;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+text-decoration: none;
+font-weight: 400;
+
+   
+}
+.font_link{
+    font-size: 15px;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
+}
+.footer_content{
+    background-color: #0097b2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+}
+.box_contato h2{
+    margin-bottom: 0.75rem;
+}
+
+.social_media{
+
+ text-decoration: none;
+margin-top: 1.5rem;
+display: flex;
+gap: 1.5rem;
+width: 300px;
+height: 50px;
+}
+.footer_link i{
+font-size: 25px;
+color: aliceblue;}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(141, 6, 6);
+    padding-top: 1.5rem;
+    width: 100%;
+    font-weight: 100;
+    color: aliceblue;
+    height: 20px;
+    padding-bottom: 2rem;
+    
+    
+}
+#footer_copyright p{
+    align-items: center;
+
+    }
+.font_footer p{
+    font-size: 15px;
+
+}
+#font_footer2{
+    font-size: 20px;
+}
+@media screen and (max-width: 792px){
+   .footer{
+    align-items: center;
+   }
+    #font_footer{
+        font-size: 17px;
+    }
+    .font_link li a{
+        font-size: 17px;
+    }
+    .font_link{
+        font-size: 15px; 
+    }
+    .footer_content{
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 3.5rem;
+    }
+    .box_contato h2{
+        margin-bottom: 0.75rem;
+    }
+    
+    .social_media{
+    margin-top: 1rem;
+    }
+    .footer_link i{
+    font-size: 18px;
+    }
+    #font_footer2{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 718px){
+   .footer{
+    text-align: center;
+   }
+    #font_footer{
+        font-size: 17px;
+    }
+    .font_link li a{
+        font-size: 17px;
+    }
+    .font_link{
+        font-size: 15px; 
+    }
+    .footer_content{
+        padding: 2rem 3.5rem;
+        display: block;
+       
+    }
+    .box_contato h2{
+        margin-bottom: 0.4rem;
+    }
+    
+    .social_media{
+    margin-top: 0.2rem;
+    align-items: center;
+    }
+    .footer_link i{
+    font-size: 18px;
+    }
+    #font_footer{
+        margin-bottom: 0.5rem;
+    }
+    #font_footer2{
+        margin-top: 1rem;
+    }
+}
+    @media screen and (max-width: 528px){
+        
+        
+        .font_link{
+            text-align: center;
+            list-style: none;
+        }
+        .footer_content{
+            text-align: center;
+        }
+      
+        
+        .social_media {
+            text-align: center;
+            display: flex;
+             gap: 1.5rem;
+            padding-left: 160px;
+            width: 350px;
+height: 60px;
+
+    }
+    #font_footer2{
+        margin-bottom: 1rem;
+    }
+    #footer_copyright p{
+      font-size: 15px;
+    
+        }
+}
+@media screen and (max-width: 520px){
+    .social_media {
+        padding-left: 155px;
+    }
+}
+@media screen and (max-width: 510px){
+    .social_media {
+        padding-left: 150px;
+    }
+}
+@media screen and (max-width: 480px){
+    .social_media {
+        padding-left: 130px;
+    }
+}
+@media screen and (max-width: 432px){
+        .social_media {
+            padding-left: 110px;
+        }
+    }
+@media screen and (max-width: 412px){
+        .social_media {
+        padding-left: 100px;
+            }
+}
+@media screen and (max-width: 396px){
+    .social_media {
+        padding-left: 90px;
+    }
+}    
+@media screen and (max-width: 360px){
+        .social_media {
+            padding-left: 75px;
+        }
+}

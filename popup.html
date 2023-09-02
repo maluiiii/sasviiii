@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <button class="popup-button" type="submit" onclick="handlePopup(true)">
+            ENTRE OU CADASTRA-SE
+        </button>
+
+        <div class="popup" id="popup">
+
+            <p class="title">JÁ POSSUI CADASTRO?</p>
+
+            <p class="desc">acesse sua conta</p>
+
+            <a href="../SASVII ATUALIZADO/LOGIN/login.html"><button class="open-popup-button" type="submit" >
+                𝗘𝗡𝗧𝗥𝗔𝗥
+            </button></a>
+
+            <p class="desc2">é novo aqui?</p>
+
+           <a href="../SASVII ATUALIZADO/LOGIN/cadastro.html" class="desc3p" ><p class="desc3" >𝗰𝗮𝗱𝗮𝘀𝘁𝗿𝗮𝗿</p></a>
+
+            <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                Fechar
+            </button>
+        </div>
+
+    </div>
+
+    <script> 
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+</body>
+</html>

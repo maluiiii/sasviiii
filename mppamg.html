@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="teste2.css">
+    <link rel="stylesheet" href="stylemp.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="script2.js">
+    <title>MAPA SASVI</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="IMG/logo.png" alt="Logo GN" class="img_logo_header">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../SASVII ATUALIZADO/index.html" class="nav-link">INICIO</a></li>
+                    <li class="nav-item"><a href="../SASVII ATUALIZADO/mapa.html" class="nav-link">MAPA</a></li>
+                    <li class="nav-item"><a href="../SASVII ATUALIZADO/agenda.html" class="nav-link">AGENDAMENTO</a></li>
+                </ul>
+            </div>
+            <div class="container">
+            <div class="login-button">
+                <button class="popup-button" type="submit" onclick="handlePopup(true)" class="cadastro">ENTRE OU CADASTRE-SE</button>
+                <div class="popup" id="popup">
+
+                    <p class="title">JÁ POSSUI CADASTRO?</p>
+        
+                    <p class="desc">acesse sua conta</p>
+        
+                    <a href="/LOGIN/login.html"><button class="open-popup-button" type="submit" >
+                        𝗘𝗡𝗧𝗥𝗔𝗥
+                    </button></a>
+        
+                    <p class="desc2">é novo aqui?</p>
+        
+                   <a href="/LOGIN/cadastro.html" class="desc3p" ><p class="desc3" >𝗰𝗮𝗱𝗮𝘀𝘁𝗿𝗮𝗿</p></a>
+        
+                    <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                        Fechar
+                    </button>
+                </div>
+           
+            </div>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="foto1.svg" alt=""></button>  
+            </div>
+        </nav>
+    </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">INICIO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">MAPA</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">AGENDAMENTO</a></li>
+            </ul>
+
+            <div class="login-button2">
+                <button>ENTRAR EM UMA CONTA</button> 
+                <button>CADASTRAR-SE</button> 
+                
+                
+            </div>
+            
+
+    </div>
+        </div>
+    </header>
+    <script src="script2.js"></script>
+    <script> 
+        const popup = document.getElementById('popup');
+
+        function handlePopup(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+    </div>
+
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.3660972056027!2d-45.93184589110601!3d-22.226184313813793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cbc7b8f38c10df%3A0x3cc15cceda99b169!2sHemocentro%20Regional%20de%20Pouso%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1693405437247!5m2!1spt-BR!2sbr" width="1360" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+
+    <footer>
+        <div class="footer_content">
+        <div class="box_contato">
+            <h2 id="font_footer">ENTRE EM CONTATO:</h2>
+            <ul class="font_link">
+                <li><a href="#"><b>Telefone: </b> 12 99744-7598</a></li>
+                <li><a href="#"><b>Email: </b>tccsasvi@gmail.com</a></li>
+         <li><p><b>Horário de atendimento :</b> segunda a sexta<BR> das 8:00 ás 17:00hrs</p></a></li>
+
+    <div class="social_media">
+         <a href="#" class="footer_link" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href="#" class="footer_link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+             </a>
+             <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                 </a>
+</div>
+            </ul>
+        </div>
+        <div class="box_ref">
+        <h2 id="font_footer">REFERENCIAS:</h2>
+        <ul class="font_link">
+            <li><a href="#">Hemominas</a></li>
+            <li><a href="#">Prosangue</a></li>
+            
+    
+        </ul>
+    </div>
+        <div class="box_sobre">
+            <h2 id="font_footer">SOBRE NOS:</h2>
+            <P class="font_link">Nos somos alunos três alunos da instituição Centro de Educação Profissional Tancredo Neves e cursamos informatica. 
+            A fim de agilizar o processo de agendamento 
+            desenvolvemos esse sistema para concluirmos o curso.</P>
+        </div>
+   
+     </footer>
+     <div id="footer_copyright">
+        &#169
+        <p>2023 all rights reservet</p>
+    </div>       
+</body>
+</html>

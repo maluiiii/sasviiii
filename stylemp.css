@@ -1,0 +1,53 @@
+
+.mybox{
+    background-color: white;
+    width: 100%;
+}
+
+.containerr{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    background-color: #0097b2;
+    box-shadow: #202020;
+}
+
+.lock{
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 70px;
+    box-shadow: #202020;
+    border: none;
+    border-radius: 10px;
+    background-color: #d63909;
+    color: #FFF;
+    cursor: pointer;
+
+   
+}
+
+.mar{
+    width: 200px;
+    border-radius: 100px;
+   margin-left: 50px;
+   margin-top: 20px;
+}
+ 
+.titi{
+color: #FFF;
+font-size: 14px;
+margin-left: 25px;
+margin-top: 10px;
+
+
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="campo">
+        <form action="#" method="post">
+
+            <div class="form-header">
+
+                <div class="title">
+                    <h1 class="logintittle">LOGIN</h1>
+                    <p>Agora você pode salvar vidas!</p>
+                </div>
+
+                
+            </div>
+
+            <div class="input-group">
+
+                <div class="input-box">
+                    <label for="email"><p>E-mail</p></label>
+                    <input id="email" type="text" name="email" placeholder="Digite seu email" required="">	
+                </div>
+
+                
+                <div class="input-box">
+                    <label for="password"><p>Senha</p></label>
+
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    
+                    <img id="olho" src="iMG_LOGIN/eye-regular-formated.png" class="eye"></img>  
+                   
+                </div>
+                <div class="esqueci">
+                <a href="#"><p>Esqueci minha senha?</p></a>
+                
+    
+            </div>
+           
+              <a href="../index.html"><input class="continuar" type="button" value="CONTINUAR"> </a>
+            
+            <div class="button-cadastro">
+                <p ><p class="letracadas">Novo por aqui? <a href="#"><b>Cadastre-se</b></p></a>
+                
+                <p ><p class="letracadas"> É um hemocentro? <a href="../LOGIN/loginhemocentro.html"><b>Faça login aqui!</b></p></a>
+                
+            </div>
+    
+        </form>
+    </div>
+    <script>
+
+        let btn = document.querySelector('.eye');
+
+        btn.addEventListener('click', function() {
+
+            let input = document.querySelector('#password');
+
+            if(input.getAttribute('type') == 'password') {
+                input.setAttribute('type', 'text');
+                document. getElementById('olho').src = "iMG_LOGIN/eye-slash-regular-formated.png";
+
+            } 
+            else {
+                input.setAttribute('type', 'password');
+                document. getElementById('olho').src = "iMG_LOGIN/eye-regular-formated.png";
+
+            }
+
+        });
+
+    </script>
+    
+</body>
+</html>

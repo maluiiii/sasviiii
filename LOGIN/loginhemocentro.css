@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poppins&family=Sigmar&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter',sans-serif;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-image: linear-gradient(to top,  #04515f,  #097486, #7fe0f1 );
+	background-repeat: no-repeat;*/
+	background-image: url(../LOGIN/iMG_LOGIN/fundohemoce.png);
+}
+.title h1{
+	font-family: 'Secular One', sans-serif;
+	font-size: 40px;
+    color: #c6302c;
+	
+	
+	
+}
+
+.title p{
+    font-size: 15px;
+    color: #c6302c;
+	
+}
+
+.campo {
+	height: 400px;
+	width: 500px;
+	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction:column ;
+	background-color: #ffffff;
+	padding: 1rem;
+	border-radius:20px;
+}
+
+.form-header{
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content:center;
+}
+
+.button-cadastro button {
+	background-color:#b60000;
+	padding: 0.4rem 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.login-button button:hover {
+	background-color: black;
+}
+
+.login-button button a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.login-button h1::after {
+	content: '';
+	display: block;
+	width: 5rem;
+	height: 0.3rem;
+	background-color: black;
+	margin: 0 auto;
+	position: absolute;
+	border-radius: 10px;
+}
+
+.input-group{
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1ren 0;
+	padding-top: -5px;
+}
+
+.input-box {
+	display: flex;
+	margin-bottom: 1.1rem;
+	align-items: center;
+	gap: 20px;
+}
+
+.input-box label{
+	color: #b60000;
+	margin-right:10px ;
+}
+
+.input-box input {
+	margin: 0.2rem 0;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px#b60000;
+	width: 370px;
+}
+
+.input-box input:hover{
+	background-color: white;
+}
+
+.input-box input:forus-visible{
+	outline: 1px solid black;
+}
+
+.gender-title h6 {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: black;
+}
+
+.input-box input::placeholder {
+	color: black;
+}
+
+.gender-group{
+	display: flex;
+	justify-content: space-between;
+}
+.continuar {
+	cursor: pointer;
+	padding: .3rem 1rem;
+	border-radius: 20px;
+	color:white;
+	background-color: #b60000;
+	height: 40px;
+	border: 2px solid transparent;
+	align-items: center;
+	font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+.letracadas a{
+	color: #b60000;
+	border-color: #b60000;
+	font-size: 12px;
+	text-decoration: bold;
+	text-decoration: none; 
+}
+
+.button-cadastro a {
+	
+	width: 250px;
+}
+.letracadas {
+	color: #0e0d0d;
+	border-color: #0e0d0d;
+	font-size: 12px;
+	text-decoration: bold;
+	text-decoration: none; 
+	padding-top: 4px;
+}
+
+.button-cadastro{
+	display:block;
+	justify-content: center;
+	padding-top: 6px;
+align-items: center;
+margin-top: 7px;
+margin-bottom: 1px;
+
+}
+
+.logintittle{
+	font-family: 'Alfa Slab One', cursive;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+	
+}
+
+.novasenha{
+	text-align: right;
+	font-size: 12px;
+	margin-top: -15px;
+	color: #b60000;
+}
+
+.imgbv{
+	position: absolute;
+	width:68%;
+	height: 485px;
+	padding-right:90px;
+	padding-left: 30px;
+	padding-bottom: 120px;
+	margin-top: -129px;
+	pointer-events: none;
+
+	
+}
+	
+.eye{
+	width: 25px;
+	height: 20px;
+	position: relative;
+	z-index: 1;
+	right: 55px;
+	cursor: pointer;
+}
+.esqueci{
+	margin-top: auto;
+	justify-content: right;
+	position: relative;
+	bottom: 10px;
+	font-size:12px ;
+	margin-top: 1px;
+	display: block;
+	text-align:right;
+	padding-right: 50px;
+
+
+
+	
+}
+.esqueci p{
+	color: #b60000;
+	border-color: #b60000;
+	font-size: 12px;
+	text-decoration: bold;
+	
+	}
+	.esqueci  a {
+		text-decoration: none;
+	}
+	@media screen and (max-width: 630px) {
+		.campo{
+			height: 350px;
+			width: 470px;
+		}
+		.input-group{
+			padding: 1rem 0;
+			padding-top: -3px;
+		}
+		
+		.input-box {
+			margin-bottom: 0.9rem;
+			gap: 8px;
+		}
+		
+		.input-box input {
+				margin: 0.1rem 0;
+				padding: 0.8rem 0.8rem;
+				border-radius: 5px;
+				box-shadow: 0.5px 0.5px 3px#b60000;
+				width: 360px;
+		}
+
+			.title h1{
+				font-size: 37px;	
+		}
+			.title p{
+				font-size: 14px;
+		}
+			.form-header{
+				margin-bottom: 1rem;
+		}
+
+		   .esqueci{
+				bottom: 14px;
+				font-size:12px ;
+				margin-top: 2px;
+				padding-right: 28px;
+					
+		}
+			.button-cadastro{
+				padding-top: 5px;
+				margin-top: 6px;
+				margin-bottom: 0.5px;
+					}
+			.eye{
+				width: 22px;
+				height: 14px;
+				z-index: 1;
+				right: 37px;
+			
+		}
+			.letracadas {
+				font-size: 11px;
+				padding-top: 7px;
+		}
+		   .continuar {
+				padding: .1.8rem 0.8rem;
+				border-radius: 15px;
+				height: 35px;
+				border: 2px solid transparent;
+	
+					
+		}
+	}
+
+	@media screen and (max-width: 604px) {
+  .campo{
+		height: 330px;
+		width: 460px;
+	}
+	.input-group{
+		padding: 0.7rem 0;
+		padding-top: -2.5px;
+	}
+	
+	.input-box {
+		margin-bottom: 0.9rem;
+		gap: 7px;
+	}
+	
+	.input-box input {
+			margin: 0.2rem 0;
+			padding: 0.7rem 0.7rem;
+			border-radius: 5px;
+			box-shadow: 0.5px 0.5px 3px#b60000;
+			width: 350px;
+			font-size: 12px;
+	}
+
+		.title h1{
+			font-size: 35px;	
+	}
+		.title p{
+			font-size: 12px;
+	}
+		.form-header{
+			margin-bottom: 1rem;
+	}
+
+	   .esqueci{
+			bottom: 14px;
+			font-size:12px ;
+			margin-top: 2px;
+			padding-right: 28px;
+				
+	}
+		.button-cadastro{
+			padding-top: 5px;
+			margin-top: 6px;
+			margin-bottom: 0.5px;
+				}
+		.eye{
+			width: 22px;
+			height: 14px;
+			z-index: 1;
+			right: 37px;
+		
+	}
+		.letracadas {
+			font-size: 13px;
+			padding-top: 3px;
+	}
+	   .continuar {
+			padding: .1.8rem 0.8rem;
+			border-radius: 15px;
+			height: 35px;
+			border: 2px solid transparent;
+				
+	}
+
+ }
+		
+	@media screen and (max-width: 500px) {
+	   		.campo{
+			height: 300px;
+			width: 400px;
+		}
+		.input-group{
+			padding: 1ren 0;
+			padding-top: -5px;
+		}
+		
+		.input-box {
+			margin-bottom: 0.7rem;
+			gap: 5px;
+		}
+		
+		.input-box input {
+				margin: 0.2rem 0;
+				padding: 0.5rem 0.5rem;
+				border-radius: 5px;
+				box-shadow: 0.5px 0.5px 3px#b60000;
+				width: 300px;
+				font-size: 12px;
+		}
+
+			.title h1{
+				font-size: 35px;	
+		}
+			.title p{
+				font-size: 13px;
+		}
+			.form-header{
+				margin-bottom: 1rem;
+		}
+
+		   .esqueci{
+				bottom: 10px;
+				font-size:10px ;
+				margin-top: 1px;
+				padding-right: 28px;
+					
+		}
+			.button-cadastro{
+				padding-top: 3px;
+				margin-top: 4px;
+				margin-bottom: 0.5px;
+					}
+			.eye{
+				width: 20px;
+				height: 14px;
+				z-index: 1;
+				right: 30px;
+			
+		}
+			.letracadas {
+				font-size: 11px;
+				padding-top: 2px;
+		}
+					.continuar {
+				padding: .1.5rem 0.5rem;
+				border-radius: 17px;
+				height: 35px;
+				border: 2px solid transparent;
+					
+		}
+		.input-box label{
+			font-size: 16px;
+		 }
+	}
+	@media screen and (max-width: 480px) {
+		.campo{
+	 height: 270px;
+	 width: 370px;
+ }
+ .input-group{
+	 padding: 0.5rem 0;
+	 padding-top: -2px;
+ }
+ 
+ .input-box {
+	 margin-bottom: 0.7rem;
+	 gap: 3.5px;
+ }
+ 
+ .input-box input {
+		 margin: 0.1rem 0;
+		 padding: 0.4rem 0.4rem;
+		 border-radius: 5px;
+		 box-shadow: 0.5px 0.5px 3px#b60000;
+		 width: 280px;
+		 font-size: 12px;
+ }
+ .input-box label{
+	font-size: 14px;
+	
+ }
+
+	 .title h1{
+		 font-size: 30px;	
+ }
+	 .title p{
+		 font-size: 12px;
+ }
+	 .form-header{
+		 margin-bottom: 0.7rem;
+ }
+
+	.esqueci{
+		 bottom: 7px;
+		 font-size:7px ;
+		 margin-top: 0.8px;
+		 padding-right: 26px;
+			 
+ }
+	 .button-cadastro{
+		 padding-top: 2px;
+		 margin-top: 3px;
+		 margin-bottom: 0.4px;
+			 }
+	 .eye{
+		 width: 18px;
+		 height: 14px;
+		 z-index: 1;
+		 right: 30px;
+	 
+ }
+	 .letracadas {
+		 font-size: 10px;
+		 padding-top: 1px;
+ }
+			 .continuar {
+		 padding: .1.5rem 0.5rem;
+		 border-radius: 15px;
+		 height: 33px;
+		 border: 2px solid transparent;
+		 font-size: 12px;
+		 margin-bottom: 8px;
+		 margin-top: 6px;
+			 
+ }
+}

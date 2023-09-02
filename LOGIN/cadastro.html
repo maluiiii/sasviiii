@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo">
+
+        <form action="#" method="post" onsubmit="senhaOK">
+
+            <div class="form-header">
+
+                <div class="title">
+                    <h1 class="logintittle">Cadastro</h1>
+                    <p>Crie sua conta!</p>
+                    <hr>
+                </div>
+
+                
+            </div>
+
+          
+                <div class="input-group1">
+                <div class="input-box1">
+
+                    <input id="nome" type="text" name="txtnome" placeholder="Nome" required>	
+                </div>
+                <div class="input-box1">
+                    <input id="nome" type="text" name="txtnome" placeholder="Sobrenome" required>	
+                </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <p class="date"> Data de nascimento</p>
+
+                <div class="input-box">
+                    <input type="date" name="txtdata" placeholder=" " required>
+                  
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="txtcpf" id="cpf" placeholder="Cpf" required>
+                   
+              </div>
+              <div class="input-box">
+                <input type="text" name="txtnsusu" id="sus" placeholder="Número do Sus XXX XXXX XXXXX XXXX" required>
+               
+          </div>
+                <div class="input-box">
+                    <input type="text" name="txtcelular" id="celular" placeholder="Celular (XX) XXXXX-XXXX" required>
+                </div>
+                <div class="date">
+                    <p>Tipo Sanguíneo</p>
+                </div>
+                <div class="oi" >
+                   
+                    <select class="input-box11" name="tipo">
+                            <option  value="bota"> A+</option>
+                            <option  value="fla"> A-</option>
+                            <option  value="flu"> B+</option>
+                            <option  value="vasco"> B-</option>
+                            <option  value="vasco"> AB+</option>
+                            <option  value="vasco"> AB-</option>
+                            <option  value="vasco"> O+</option>
+                            <option  value="vasco"> O-</option>
+                            <option  value="vasco"> NÃO SEI MEU TIPO </option>
+                            </select>
+                        
+                </div>
+                <div class="input-box">
+                   
+
+                    <input type="email" name="txtemail" id="email" placeholder="Email" required>
+                </div>
+              
+                <div class="input-box">
+                    
+
+                    <input type="password" name="txtsenha" id="senha" placeholder="Senha" required onchange='conferesenha();''> 
+                      
+                    <img id="olho" src="iMG_LOGIN/eye-regular-formated.png" class="eye"></img>
+    
+             </div> 
+
+
+             <div class="input-box">
+                <input type="password" name="txtsenhaconfirma" id="senha" placeholder="Confirmar senha" required onchange='conferesenha();'>
+                  
+                <img id="olho" src="iMG_LOGIN/eye-regular-formated.png" class="eye"></img>
+            
+
+               </div>    
+            </div>
+            
+            <p class="fim">As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o
+                 sistema Sasvi.<a class="tirar" href=""> Saiba mais</a></p>
+                 <p class="fim"> Ao clicar em Cadastre-se, você concorda com nossos<a class="tirar" href="">  Termos, Política de Privacidade e
+                      Política de Cookies.</a>ê poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+        
+              <a href=" "><input class="continuar" type="submit" value="Cadastre-se"> </a>
+           
+        </form>
+    </div>
+    <script>
+         let btn = document.querySelector('.eye');
+
+        btn.addEventListener('click', function() {
+
+            let input = document.querySelector('#senha');
+        
+
+            if(input.getAttribute('type') == 'password') {
+                input.setAttribute('type', 'text');
+                document. getElementById('olho').src = "iMG_LOGIN/eye-slash-regular-formated.png";
+
+            } 
+            else {
+                input.setAttribute('type', 'password');
+                document. getElementById('olho').src = "iMG_LOGIN/eye-regular-formated.png";
+
+            }
+
+
+
+
+
+        function conferesenha(){
+            const senha = document.querySelector('input[name=txtsenha]');
+            const confirma =  document.querySelector('input[name=txtsenhaconfirma]');
+
+            if(confirma.value=== senha.value){
+confirma.setCustomValidity('');
+            }else{
+                confirma.setCustomValidity('Senhas não conferem');
+            }
+        }
+        function senhaOK(){
+            alert("Senhas conferem")
+        }
+
+
+      
+        });
+        
+        
+        
+
+    </script>
+    
+    
+</body>
+</html>
